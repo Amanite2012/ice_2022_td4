@@ -1,5 +1,5 @@
-from app.models.tortoise import Coin
-from app.models.pydantic import CoinBaseResponseSchema, CoinBaseSchema
+from project.app.models.tortoise import Coin
+from project.app.models.pydantic import CoinBaseResponseSchema, CoinBaseSchema
 
 
 async def get_all() -> list | None:
