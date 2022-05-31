@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from app.db import init_db
-from app.api import coins
+from project.app.db import init_db
+from project.app.api import coins
 
 def create_application() -> FastAPI:
     application = FastAPI()
