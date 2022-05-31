@@ -4,6 +4,7 @@ from tortoise.contrib.pydantic import pydantic_model_creator
 
 class Coin(models.Model):
     name_id = fields.CharField(max_length=50, unique=True)
+    name = fields.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return f"{self.name_id}"
